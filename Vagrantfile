@@ -8,7 +8,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "netsensia/ubuntu-trusty64"
+  # config.vm.box = "ubuntu/trusty64" // Virtualbox
+  config.vm.box = "netsensia/ubuntu-trusty64" // VMWare
   
   # Create a private network, which allows host-only access to the machine using a specific IP.
   config.vm.network "private_network", ip: "12.12.12.12"
