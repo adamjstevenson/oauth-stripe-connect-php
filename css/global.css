@@ -5,9 +5,13 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #fafafa;
 }
 body > .container {
   padding: 60px 15px 0;
+}
+.navbar-default {
+  background-color:#fff;
 }
 .footer {
   position: absolute;
@@ -18,4 +22,12 @@ body > .container {
 }
 .space-top {
   margin-top:20px;
+}
+dt {
+  color: #777;
+}
+.shadow-sm {
+  webkit-box-shadow: 0 2px 0 rgba(37,46,53,0.06);
+  -moz-box-shadow: 0 2px 0 rgba(37,46,53,0.06);
+  box-shadow: 0 2px 0 rgba(37,46,53,0.06);
 }

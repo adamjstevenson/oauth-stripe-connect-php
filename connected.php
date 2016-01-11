@@ -23,30 +23,43 @@
 
       <!-- Display some info about the account YAY FUN -->
       <?php if (isset($account)): ?>
-      	<div class="panel panel-default">
-      		<div class="panel-heading">
-      			<h2 class="panel-title">
-      				About your account
-      			</h2>
-      		</div>
+        <h2 class="page-header">About your account</h2>
+      	<div class="panel panel-default shadow-sm">
       		<div class="panel-body">
-      			<dl class="dl-horizontal">
-      				<dt><i class="fa fa-cc-stripe"></i> Account ID</dt>
-      				<dd><?= $account->id; ?></dd>
 
-      				<dt><i class="fa fa-globe"></i> Website</dt>
+      			<dl class="dl-horizontal">
+
+              <dt><i class="fa fa-cc-stripe"></i> Account ID</dt>
+              <dd><?= $account->id; ?></dd>
+
+              <dt><i class="fa fa-envelope"></i> Email</dt>
+              <dd><?= $account->email; ?></dd>
+
+              <dt><i class="fa fa-briefcase"></i> Business Name</dt>
+              <dd><?= $account->business_name; ?></dd>
+
+              <dt><i class="fa fa-globe"></i> Country</dt>
+              <dd><?= $account->country; ?></dd>
+
+              <dt><i class="fa fa-usd"></i> Default Currency</dt>
+              <dd><?= $account->default_currency; ?></dd>
+
+              <dt><i class="fa fa-briefcase"></i> Display Name</dt>
+              <dd><?= $account->display_name; ?></dd>
+
+      				<dt><i class="fa fa-file-text"></i> Statement Descriptor</dt>
+              <dd><?= $account->statement_descriptor; ?></dd>
+
+              <dt><i class="fa fa-question-circle"></i> Charges Enabled</dt>
+              <dd><?= $account->charges_enabled ? 'True' : 'False'; ?></dd>
+
+              <dt><i class="fa fa-question-circle"></i> Transfers Enabled</dt>
+              <dd><?= $account->transfers_enabled ? 'True' : 'False'; ?></dd>
+
+      				<dt><i class="fa fa-link"></i> Website</dt>
       				<dd><?= $account->business_url; ?></dd>
 
-      				<dt><i class="fa fa-user"></i> Name</dt>
-      				<dd><?= $account->legal_entity->first_name . " " . $account->legal_entity->last_name; ?></dd>
-
-      				<dt><i class="fa fa-briefcase"></i> Display Name</dt>
-      				<dd><?= $account->display_name; ?></dd>
       			</dl>
-
-      			<blockquote>
-      				<p><?=$account->product_description;?></p>
-      			</blockquote>
       		</div>
       	</div>
       <?php endif ?>
