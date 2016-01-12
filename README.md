@@ -23,6 +23,6 @@ git clone https://github.com/adamjstevenson/oauth-stripe-connect-php.git
 
 2. Setup your Stripe account and the config file:
   2a. Login to your Stripe account (or create one) and [register your application](https://dashboard.stripe.com/account/applications/settings) as a platform if you haven't already.
-  2b. 
+  2b.
 
 This project includes a Vagrantfile and a bootstrap.sh file to provision an app that's ready to 
