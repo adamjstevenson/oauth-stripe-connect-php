@@ -23,6 +23,5 @@ git clone https://github.com/adamjstevenson/oauth-stripe-connect-php.git
 
 2. Setup your Stripe account and the config file:
   2a. Login to your Stripe account (or create one) and [register your application](https://dashboard.stripe.com/account/applications/settings) as a platform if you haven't already.
-  2b.
-
-This project includes a Vagrantfile and a bootstrap.sh file to provision an app that's ready to 
+  2b. Add your test secret key and development client ID to the config/config.php file. 
+  2c. Set a redirect URL for your application to point to https://yoursite.com/connected.php. This project includes a Vagrantfile and a bootstrap.sh file to provision a server that's ready to go for this application and will run locally by default on 12.12.12.12 (covered in more detail next). If you choose this option, you'll want to set the redirect URI to http://12.12.12.12/connected.php. 
