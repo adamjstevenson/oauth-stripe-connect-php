@@ -9,13 +9,16 @@
 
     <div class="container">
       <div class="page-header">
-        <h1>Simple Stripe Connect PHP</h1>
+        <h1>A Simple Stripe Connect PHP example</h1>
       </div>
       <p class="lead">
-        This is a basic Stripe Connect example built with PHP. Click the button below to connect your Stripe account. 
+        This is a basic Stripe Connect example app built with PHP and an <a href="https://github.com/thephpleague/oauth2-client">OAuth 2.0 client</a>. 
+      </p>
+      <p class="lead">
+        This integration uses <a href="https://stripe.com/docs/connect/standalone-accounts">standalone accounts</a>, so you can either create a new test account using <a href="https://stripe.com/docs/testing">some test data</a>, or connect an existing account (in test mode).
       </p>
       <p>
-        <a class="btn btn-lg btn-block btn-primary" href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_7dsxjCPZ3Ki753aji7elle6doG2Zzp1C&scope=read_write">Connect to Stripe</a>
+        <a class="btn btn-primary btn-block btn-xl" href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_7dsxjCPZ3Ki753aji7elle6doG2Zzp1C&scope=read_write">Connect to Stripe</a>
       </p>
     </div>
 
