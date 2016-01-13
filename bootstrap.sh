@@ -71,6 +71,8 @@ sudo apt-get -y install nano
 # install Composer
 curl -s https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+cd /var/www/html
+composer install
 
 # remove default index.html file
 sudo rm /var/www/html/index.html
