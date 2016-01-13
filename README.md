@@ -20,7 +20,7 @@ Clone this repository:
 git clone https://github.com/adamjstevenson/oauth-stripe-connect-php.git
 ```
 
-Log in to your Stripe account (or [create one](https://dashboard.stripe.com/register)) and [register your application](https://dashboard.stripe.com/account/applications/settings) as a platform. Set a redirect URI in Stripe that points to https://<yoursite.com>/connected.php. 
+Log in to your Stripe account (or [create one](https://dashboard.stripe.com/register)) and [register your application](https://dashboard.stripe.com/account/applications/settings) as a platform. Set a redirect URI in Stripe that points to https://yoursite.com/connected.php. 
 
 **Note:** This project includes a Vagrantfile and a bootstrap.sh file to provision a server that's ready to go for this application and will run locally by default on 12.12.12.12 (covered in more detail below). If you choose this option, you'll want to set the redirect URI to http://12.12.12.12/connected.php. 
 
