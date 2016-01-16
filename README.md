@@ -26,15 +26,14 @@ Log in to your Stripe account (or [create one](https://dashboard.stripe.com/regi
 
 Add your [test secret key](https://dashboard.stripe.com/account/apikeys), [development client ID](https://dashboard.stripe.com/account/applications/settings), and redirect URL to the config/config.php file. 
 
+Run `composer install` from the project's root directory to install dependencies.
+
 ## Testing locally with Vagrant
 
 This repo contains a Vagrantfile and bootstrap.sh file to provision a local development environment and get this app up and running easily. To use this, you'll want to:
 
 1. Ensure you've [installed Vagrant](http://www.vagrantup.com/downloads.html).
-2. From the project's root directory, run `vagrant up`. This should provision the machine and install everything that's needed. This might take a while the first time. 
-3. Load http://12.12.12.12 in your browser. You should see the index page for this app with a button to "connect to Stripe".
+2. From the project's root directory, run `vagrant up`. The bootstrap file should provision the machine and install everything that's needed to run this application. This might take a while the first time. 
+3. Load http://12.12.12.12 (or whatever IP you defined as the local network in your Vagrantfile) in your browser. You should see the index page for this app with a button to "connect to Stripe".
 4. Fill out the account application with [some test data](https://stripe.com/docs/testing), connect an existing Stripe account if you have one, or just click the "skip this account form" link at the top to connect with a test-only account. 
 5. You'll be redirected back to the redirect URL you defined in your Stripe account (your local Vagrant instance) and some information about your account will be displayed. Hooray!
-
-
-
