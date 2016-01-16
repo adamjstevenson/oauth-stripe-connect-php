@@ -1,5 +1,5 @@
 <?php 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/config/config.php');
+require_once('./config/config.php');
 
 // initialize a new generic provider
 $provider = new \League\OAuth2\Client\Provider\GenericProvider([
