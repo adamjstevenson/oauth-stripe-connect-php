@@ -1,7 +1,7 @@
 # A simple Stripe Connect PHP demo app
 
-This is a simple Stripe Connect application written in PHP. At this point it doesn't do a whole lot, and the intention is primarily to provide a general example to help you get up and running with [Stripe Connect](https://stripe.com/docs/connect). You can find a running demo of this application here:
-http://159.203.237.86/oauth-stripe-connect-php/. This example uses test credentials, so this platform will only be able to access test data when you connect your account.
+This is a simple Stripe Connect application written in PHP. At this point it doesn't do a whole lot, and the intention is primarily to provide a general example to help you get up and running with [Stripe Connect](https://stripe.com/docs/connect). You can find a running demo of this application running at
+[https://connect.fff.red/](https://connect.fff.red/). This example uses test credentials, so this platform will only be able to access test data when you connect your account.
 
 ## Some important things you should know right off the bat
 
